@@ -2,15 +2,23 @@ let details=document.querySelector(".details");
 
 
 
-const tofetch = async()=>{
-    const data= await fetch("http://3.223.98.72:1337/api/students");
-    const response= await data.json();
-    console.log(response);
-    console.log("hello");
+async function start(){
+    const data= await fetch("https://jsonplaceholder.typicode.com/users");
+    const Response= await data.json();
+    document.getElementById("userData").innerHTML=Response.map((user)=>
+        `<tr>
+         <td>${user.name}</td>
+         <td>${user.email}</td>
+         <td>${user.username}</td>
+         <td>${user.website}</td>
+         <td>${user.phone}</td>
+        </tr>`
+    ).join("");
+    
 }
 
 
 // window.onload = function(){
     
 // }
-tofetch();
+start();

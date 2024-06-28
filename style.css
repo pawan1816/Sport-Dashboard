@@ -137,22 +137,64 @@
     color: #fff;
 }
 .details{
-    background: #10cf13;
     margin-top: 50px;
+    font-size: 15px;
+    margin-left: 40px;
 }
-.details .head{
-    display: flex;
+.details th{
     font-size: 20px;
-    font-weight: 400;
-    padding-left: 70px;
+    font-weight: lighter;
+    padding-left: 65px;
+    padding-right: 65px;
+    border: none;
+}
+.details tr{
+    font-size: small;
+    border: none;
+    border-left: none;
+    border-radius: none;
 
 }
-.details .head h2{
-    display: inline;
+.details td{
+    padding: 5px;
 }
-.details .head p{
+.footer{
     display: flex;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 70px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.footer .icon{
+    display: flex;
+}
+.footer .icon i{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 25px;
+    background: #594297;
+    width: 40px;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 10px;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.pages .pageNumber{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+
+}
+.pages h2{
+    padding-left: 10px;
+    padding-right: 10px;
 }
